@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# 児童福祉クイズ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+児童発達支援・放課後等デイサービスの報酬改定や加算に関する知識を、クイズ形式で学べる Web アプリです。
 
-Currently, two official plugins are available:
+## 機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **クイズモード** — 4 択問題・○× 問題をランダム出題し、即時フィードバックと解説を表示
+- **学習モード** — カテゴリ別にまとめた解説記事を閲覧
+- **PWA 対応** — ホーム画面に追加してオフラインでも利用可能
 
-## React Compiler
+## 技術スタック
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| レイヤー | 技術 |
+|---|---|
+| フレームワーク | React 19 + TypeScript |
+| ビルド | Vite |
+| スタイリング | Tailwind CSS 4 |
+| UI コンポーネント | shadcn/ui |
+| テスト | Vitest + Testing Library |
+| PWA | vite-plugin-pwa |
 
-## Expanding the ESLint configuration
+## セットアップ
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+```bash
+# 依存インストール
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+# 開発サーバー起動
+npm run dev
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# ビルド
+npm run build
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# テスト実行
+npm test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ディレクトリ構成
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/       # 画面コンポーネント
+│   ├── ui/           # 共通 UI (button, card, badge など)
+│   └── __tests__/    # コンポーネントテスト
+├── data/             # 問題データ・学習トピックデータ
+├── hooks/            # カスタムフック (useQuiz, usePWAInstall)
+├── types/            # 型定義
+└── lib/              # ユーティリティ
+```
+
+## ライセンス
+
+Private

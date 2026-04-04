@@ -11,33 +11,33 @@ vi.mock('../../hooks/usePWAInstall', () => ({
 
 describe('StartScreen', () => {
   it('renders app title', () => {
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
     expect(screen.getAllByText('児童福祉 制度クイズ').length).toBeGreaterThanOrEqual(1);
   });
 
   it('renders service filter buttons', () => {
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
     expect(screen.getAllByText('児童発達支援').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('放課後等デイサービス').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('居宅訪問').length).toBeGreaterThanOrEqual(1);
   });
 
   it('renders difficulty filter buttons', () => {
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
     expect(screen.getAllByText('初級').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('中級').length).toBeGreaterThanOrEqual(1);
     expect(screen.getAllByText('上級').length).toBeGreaterThanOrEqual(1);
   });
 
-  it('shows question count of 100 when all selected', () => {
-    render(<StartScreen onStart={vi.fn()} />);
-    expect(screen.getAllByText('100問').length).toBeGreaterThanOrEqual(1);
+  it('shows question count of 119 when all selected', () => {
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
+    expect(screen.getAllByText('119問').length).toBeGreaterThanOrEqual(1);
   });
 
   it('calls onStart with services and difficulties when start button is clicked', async () => {
     const user = userEvent.setup();
     const onStart = vi.fn();
-    render(<StartScreen onStart={onStart} />);
+    render(<StartScreen onStart={onStart} onStudy={vi.fn()} />);
     const buttons = screen.getAllByText('クイズを始める');
     await user.click(buttons[0]);
     expect(onStart).toHaveBeenCalledTimes(1);
@@ -49,7 +49,7 @@ describe('StartScreen', () => {
 
   it('updates question count when filtering by difficulty', async () => {
     const user = userEvent.setup();
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
 
     // Deselect 中級 and 上級 to get only 初級
     const medButtons = screen.getAllByText('中級');
@@ -59,28 +59,34 @@ describe('StartScreen', () => {
 
     const countElements = screen.getAllByText(/^\d+問$/);
     const count = parseInt(countElements[0].textContent!);
-    expect(count).toBeLessThan(100);
+    expect(count).toBeLessThan(119);
     expect(count).toBeGreaterThan(0);
   });
 
   it('disables start button when no services selected', async () => {
     const user = userEvent.setup();
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
 
-    // Click first すべて (service toggle) to deselect all services
-    const allButtons = screen.getAllByText('すべて');
-    await user.click(allButtons[0]);
+    // Deselect all service toggle items individually
+    const serviceButtons = ['児童発達支援', '放課後等デイサービス', '居宅訪問'];
+    for (const label of serviceButtons) {
+      const btns = screen.getAllByText(label);
+      await user.click(btns[0]);
+    }
     const startButtons = screen.getAllByText('クイズを始める');
     expect(startButtons[0]).toBeDisabled();
   });
 
   it('disables start button when no difficulty selected', async () => {
     const user = userEvent.setup();
-    render(<StartScreen onStart={vi.fn()} />);
+    render(<StartScreen onStart={vi.fn()} onStudy={vi.fn()} />);
 
-    // Click second すべて (difficulty toggle) to deselect all difficulties
-    const allButtons = screen.getAllByText('すべて');
-    await user.click(allButtons[1]);
+    // Deselect all difficulty toggle items individually
+    const diffButtons = ['初級', '中級', '上級'];
+    for (const label of diffButtons) {
+      const btns = screen.getAllByText(label);
+      await user.click(btns[0]);
+    }
     const startButtons = screen.getAllByText('クイズを始める');
     expect(startButtons[0]).toBeDisabled();
   });

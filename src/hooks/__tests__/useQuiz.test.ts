@@ -32,7 +32,7 @@ describe('useQuiz', () => {
       result.current.startQuiz(['居宅訪問'], ALL_DIFFICULTIES);
     });
     expect(result.current.totalCount).toBeGreaterThan(0);
-    expect(result.current.totalCount).toBeLessThan(100);
+    expect(result.current.totalCount).toBeLessThan(119);
   });
 
   it('filters questions by difficulty', () => {
@@ -44,7 +44,7 @@ describe('useQuiz', () => {
       );
     });
     expect(result.current.totalCount).toBeGreaterThan(0);
-    expect(result.current.totalCount).toBeLessThan(100);
+    expect(result.current.totalCount).toBeLessThan(119);
   });
 
   it('filters by both service and difficulty', () => {

@@ -21,7 +21,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、事業所の支援の質（専門的支援・個別支援の充実度など）を評価する多段階の基本報酬体系が導入されました。単純な定員規模・時間だけでなく、質的指標が報酬に反映されるようになりました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -39,7 +39,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '支援プログラムは都道府県または政令市・中核市へ届け出るとともに、事業所のウェブサイト等で公表することが義務付けられました。届出・公表を行わない場合は基本報酬が減算されます。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -56,26 +56,26 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '児童発達支援・放課後等デイサービスの基本報酬は、1回の利用（日単位）ごとに算定します。利用1回につき所定の単位数が発生し、それを国保連に請求する仕組みです。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
     serviceType: '共通',
     category: '基本報酬',
     difficulty: '中級',
-    q: '2024年度改定において、支援プログラムを届け出ていない場合に生じる措置として正しいものはどれか。',
+    q: '2024年度改定において、支援プログラムを届け出・公表していない場合に生じる措置として正しいものはどれか。',
     choices: [
       '基本報酬が5%減算される',
-      '基本報酬が10%減算される',
       '加算が一切算定できなくなる',
+      '基本報酬が15%減算される（所定単位数の85/100を算定）',
       '指定取消しの対象となる',
     ],
-    answer: 1,
+    answer: 2,
     explanation:
-      '支援プログラムの届出・公表を行っていない事業所は、基本報酬が10%減算されます。2024年度改定で新設されたペナルティ規定です。',
+      '支援プログラムの届出・公表を行っていない事業所は、所定単位数の85/100で算定（15%減算）となります。なお令和6年度中は経過措置が設けられ、令和7年4月1日から本格適用されます。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -93,7 +93,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、「健康・生活」「運動・感覚」「認知・行動」「言語・コミュニケーション」「人間関係・社会性」の5領域すべてにわたる支援実績を有することが、上位区分の基本報酬算定に必要な要件の一つとされています。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
 
   // =====================================================================
@@ -115,7 +115,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '専門的支援加算の対象となる専門職は、理学療法士・作業療法士・言語聴覚士・心理担当職員・視覚障害・聴覚障害等の専門職などです。介護福祉士は対象外です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -133,25 +133,25 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '専門的支援加算は、理学療法士等の専門職が週1回以上、実際に利用児童に対して直接支援を行うことが要件です。単に雇用・配置しているだけでは算定できません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
     serviceType: '児童発達支援',
     category: '専門的支援加算',
     difficulty: '中級',
-    q: '専門的支援加算（Ⅰ）と専門的支援加算（Ⅱ）の違いとして正しいものはどれか。',
+    q: '2024年度改定で専門的支援加算が再編され、新たに設けられた2つの加算の組み合わせとして正しいものはどれか。',
     choices: [
-      'Ⅰは常勤換算0.5以上、Ⅱは常勤換算1.0以上の配置',
-      'Ⅰは1種類以上の専門職配置、Ⅱは2種類以上の専門職配置',
-      'Ⅰは週1回以上の直接支援、Ⅱは毎日の直接支援',
-      'Ⅰは医療連携あり、Ⅱは医療連携なし',
+      '専門的支援体制加算と専門的支援実施加算',
+      '専門的支援配置加算と専門的支援研修加算',
+      '専門的支援基礎加算と専門的支援応用加算',
+      '専門的支援常勤加算と専門的支援非常勤加算',
     ],
-    answer: 1,
+    answer: 0,
     explanation:
-      '専門的支援加算（Ⅰ）は1種類以上の対象専門職を配置して週1回以上直接支援を行う場合、（Ⅱ）は2種類以上の専門職を配置してそれぞれ週1回以上直接支援を行う場合に算定できます。（Ⅱ）のほうが単位数が高く設定されています。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+      '2024年度改定で専門的支援加算は、専門職の配置（体制）を評価する「専門的支援体制加算」と、専門職が計画的に個別・集中的な直接支援を実施したことを評価する「専門的支援実施加算」に再編されました。',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
   {
     type: '4択',
@@ -168,8 +168,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 0,
     explanation:
       '専門的支援加算における心理担当職員は、公認心理師または臨床心理士の資格を有する者とされています。社会福祉士・精神保健福祉士は別の加算（関係機関連携加算等）の対象となる場合があります。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -191,25 +191,25 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '家族支援加算は、保護者への相談支援やペアレントトレーニング・ペアレントプログラムの実施など、家族の養育力向上に向けた支援を評価するものです。調理実習や交流会補助は対象外です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
     serviceType: '共通',
     category: '家族支援加算',
     difficulty: '中級',
-    q: '家族支援加算（Ⅱ）の算定要件として正しいものはどれか。',
+    q: '2024年度改定で再編された家族支援加算の区分について、正しい組み合わせはどれか。',
     choices: [
-      '保護者に対し、月2回以上の相談支援を実施すること',
-      '支援員が保護者の居宅を訪問して相談支援を行うこと',
-      'ペアレントトレーニング等を年間6回以上実施すること',
-      '保護者が事業所に来所して、30分以上の面談を行うこと',
+      'Ⅰ=事業所内での個別相談、Ⅱ=居宅訪問による相談',
+      'Ⅰ=事業所内での個別相談、Ⅱ=グループでの家族支援（ペアレントトレーニング等）',
+      'Ⅰ=オンライン相談、Ⅱ=事業所内相談',
+      'Ⅰ=保護者の観察参加、Ⅱ=保護者への情報提供',
     ],
     answer: 1,
     explanation:
-      '家族支援加算（Ⅱ）は、支援員が保護者の居宅を訪問して相談支援を行うことを評価するものです。在宅支援として特に手厚い支援を行う場合に算定できます。（Ⅰ）は事業所内での相談支援等を対象とします。',
+      '2024年度改定で家族支援加算は4区分に再編されました。(Ⅰ)事業所内での個別の相談援助、(Ⅱ)グループでの家族支援（ペアレントトレーニング等）、(Ⅲ)居宅への訪問による相談支援、(Ⅳ)オンラインでの相談支援です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -226,8 +226,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '家族支援加算の記録として必要なのは、実施日時・参加者・支援内容・フォローアップ内容等です。保護者の収入や就労状況は家族支援加算の記録要件には含まれません。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
 
   // =====================================================================
@@ -248,8 +248,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '個別サポート加算（Ⅰ）は、障害の特性等によりケアニーズが特に高いと認められた児童（判定スコアが一定以上）を対象として算定します。障害種別や手帳等級ではなく、ケアニーズの高さで判定されます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -267,7 +267,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '個別サポート加算（Ⅱ）は、虐待を受けた経験があると認められた児童、または養育環境上の課題（ネグレクト等）があると認められた児童に対して、適切な支援を提供した場合に算定できます。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -284,8 +284,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '行動関連項目の合計点数が一定以上（強度行動障害の判定基準を超える場合）は、個別サポート加算（Ⅰ）の算定対象となるとともに、事業所が強度行動障害支援者養成研修修了者を配置している場合には強度行動障害支援者養成研修加算も併算定できます。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -306,8 +306,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '欠席時対応加算は、利用者が急病等でやむを得ず欠席した場合に、事業所が連絡対応・代替支援等を行ったことを評価するもので、月4回を限度として算定できます。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
   {
     type: '4択',
@@ -325,7 +325,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '送迎加算（Ⅱ）は、医療的ケアが必要な児童に対して、看護師等が同乗して医療的ケアを行いながら送迎を実施する場合に算定できます。単なる送迎（Ⅰ）よりも高い単位数が設定されています。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -342,8 +342,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '欠席時対応加算の記録には、欠席連絡を受けた日時・対応した職員・事業所の対応内容等を記載する必要があります。ただし、欠席理由について保護者が申告する内容で足り、医師の診断書や病名の詳細な医学的情報の記録義務はありません。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -364,8 +364,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '医療連携体制加算は、医療機関との連携により、医療的ケアが必要な重症心身障害児等を事業所で受け入れ、看護師等が医療的ケアを提供する体制を整備・実施することを評価するものです。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -383,7 +383,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '医療連携体制加算（Ⅶ）は、医療的ケア判定スコアが16点以上の超重症児等を受け入れ、看護師等が医療的ケアを行う場合に算定できます。高度な医療的ケアを必要とする児童を評価する加算です。',
     source: '報酬改定詳細',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001217830.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12201000/001217865.pdf',
   },
   {
     type: '4択',
@@ -401,7 +401,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '医療連携体制加算（Ⅰ）〜（Ⅳ）は、医療機関等と連携して看護師の派遣を受ける形態が基本です。一方、（Ⅴ）〜（Ⅶ）は事業所自身に看護師を配置して常時対応できる体制を求めており、より手厚い支援体制を評価します。',
     source: '報酬改定詳細',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001217830.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12201000/001217865.pdf',
   },
 
   // =====================================================================
@@ -422,8 +422,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '関係機関連携加算における「関係機関」とは、保育所・幼稚園・認定こども園・学校・医療機関・相談支援事業所等、児童の支援に関わる機関を指します。これらの機関との連絡・会議・情報共有を評価します。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -441,7 +441,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '訪問支援加算は、事業所の職員が保育所・学校等を訪問し、当該施設の職員と連携しながら利用児童への支援を行った場合に算定できます。インクルージョン推進・支援の一般化を目的とした加算です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -459,7 +459,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '関係機関連携加算（Ⅱ）は、個別支援計画の作成・見直しに際して、関係機関の職員を交えた担当者会議を開催し、連携して支援方針を検討した場合に算定できます。単なる情報提供より踏み込んだ連携を評価します。',
     source: '報酬改定詳細',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001217830.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12201000/001217865.pdf',
   },
 
   // =====================================================================
@@ -481,7 +481,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定で示された5領域は「健康・生活」「運動・感覚」「認知・行動」「言語・コミュニケーション」「人間関係・社会性」です。「就労・職業訓練」は5領域に含まれません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -499,7 +499,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定ではインクルージョン推進の観点から、保育所等訪問支援との連携や保育所・学校等への訪問支援を通じて、障害のある子どもが地域の一般施設でも適切な支援を受けられる体制づくりが強化されました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -516,8 +516,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '「言語・コミュニケーション」領域には、言語指導・AAC（絵カード・VOCA等の拡大代替コミュニケーション）の活用支援・コミュニケーション手段の獲得支援などが含まれます。感覚統合は「運動・感覚」、SST等は「人間関係・社会性」領域です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -538,8 +538,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '児童発達支援管理責任者（児発管）の主な役割は、アセスメントをもとに個別支援計画を作成し、支援が適切に実施されているかを管理・監督することです。支援の質の核心を担う職種です。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -556,8 +556,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '個別支援計画のモニタリング（見直し）は原則6か月ごとに実施することが義務付けられています。ただし、状況変化があった場合には必要に応じて随時見直しを行います。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '4択',
@@ -574,8 +574,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 3,
     explanation:
       '児発管の資格要件のうち相談支援業務（相談支援専門員として従事等）の実務経験は5年以上とされています。なお、直接支援業務は原則3年以上（高齢・障害・児童等の分野）が必要です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -596,8 +596,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '障害児通所支援事業所は、サービス提供に関する記録を5年間保存することが義務付けられています。実地指導の際にはこれらの記録が確認されます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -614,8 +614,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '虚偽の記録作成・提示は重大な不正行為とみなされ、都道府県知事等による指定の取消しまたは効力の停止の対象となります。これは児童福祉法・障害者総合支援法に基づく行政処分の最も重いものです。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
 
   // =====================================================================
@@ -637,7 +637,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '強度行動障害支援者養成研修加算は、強度行動障害支援者養成研修（基礎研修または実践研修）の修了者が、強度行動障害を有する利用児童に対して直接支援を実施している場合に算定できます。配置だけでは不十分で、実際に担当することが要件です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -654,8 +654,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 0,
     explanation:
       '強度行動障害支援者養成研修の実践研修は、基礎研修を修了した後、1年以上の強度行動障害を有する者への支援経験を積んだ者が受講対象となります。基礎研修→実務経験→実践研修という段階的なキャリアパスが設定されています。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -676,8 +676,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '児童発達支援は、0歳から就学前（原則として小学校入学前の6歳まで）の障害のある子どもを対象としたサービスです。就学後は放課後等デイサービス等の対象となります。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '4択',
@@ -695,7 +695,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、従来の利用定員区分に加え、事業所の支援の質（5領域対応・専門的支援・家族支援等）を評価した多段階の区分が新設されました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -712,8 +712,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '重症心身障害児を主として通わせる事業所（重心型）は、手厚い支援が必要なため、通常の事業所より高い基本報酬単位数が設定されています。看護師等の常勤配置も求められます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -730,8 +730,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '児童発達支援の1日当たりの支援時間に法令上の明確な下限・上限の規定はなく、個別支援計画に基づき必要な時間・内容で実施します。ただし、実態として2〜4時間程度が一般的です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '4択',
@@ -748,8 +748,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '欠席した日については基本報酬は算定できませんが、事業所が当日欠席連絡に対して連絡調整・代替サービスの提案等を行った場合に、欠席時対応加算（月4回限度）を算定することができます。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
 
   // =====================================================================
@@ -770,8 +770,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '児童発達支援センターは、地域における障害児支援の中核機関として、直接支援（通所支援）に加え、保育所等訪問支援の実施や地域の事業所・施設へのスーパーバイズ・コンサルテーション機能を担います。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
   {
     type: '4択',
@@ -789,7 +789,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、児童発達支援センターを地域の障害児支援の中核的機関として法律上明確に位置づけ、地域の障害児通所支援事業所へのスーパーバイズ・コンサルテーション機能や、保育所等訪問支援の積極的な実施が求められるようになりました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -807,7 +807,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、児童発達支援センターが地域の障害児通所支援事業所等にスーパーバイズ・コンサルテーションを行った場合に算定できる地域支援体制加算が設けられ、報酬上も地域支援機能が評価されるようになりました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
 
   // =====================================================================
@@ -828,8 +828,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '保育所等訪問支援の訪問先は、保育所・幼稚園・認定こども園・小学校・中学校・高校・放課後児童クラブ等の地域の「一般施設」です。障害児支援事業所（児童発達支援事業所等）は訪問先には含まれません。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '4択',
@@ -846,8 +846,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 3,
     explanation:
       '保育所等訪問支援は、通所受給者証を持つ障害のある0歳から18歳未満の児童で、保育所・学校等の一般施設に在籍している者が対象です。就学前・就学後ともに利用可能です。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
 
   // =====================================================================
@@ -868,8 +868,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '放課後等デイサービスは就学後（小学校入学後）の障害のある児童を対象とし、原則18歳未満です。ただし、20歳になるまで継続して支援を受けることが必要と認められる場合は、20歳まで利用できます。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '4択',
@@ -887,7 +887,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定では、放課後等デイサービスの基本報酬は、支援の質の評価（5領域対応・専門的支援等）による上位区分・標準区分の区分と、利用定員規模の組み合わせによって算定されるようになりました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -904,8 +904,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '放課後等デイサービスでは、学校休業日（夏休み・春休み等）は1日を通じたより長時間の支援が必要なことから、学校授業日（放課後の支援）より高い単位数が設定されています。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -923,7 +923,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '放課後等デイサービスの基本報酬上位区分の算定には、支援プログラムの届出・公表を行っているとともに、5領域（健康・生活、運動・感覚、認知・行動、言語・コミュニケーション、人間関係・社会性）すべてにわたる支援内容を支援プログラムに位置づけていることが要件の一つです。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
 
   // =====================================================================
@@ -945,7 +945,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '支援プログラムは、事業所のウェブサイト等（独自サイトのほか、都道府県等が運営する公表システムへの掲載も可）で公表することが義務付けられています。掲示板のみや窓口閲覧のみでは要件を満たしません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -963,7 +963,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '支援プログラムには、支援の目標・方針、5領域に対応した具体的な支援内容、家族支援の方針等を記載する必要があります。職員の個人別給与情報は記載事項ではなく、公表義務もありません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -974,14 +974,14 @@ export const ALL_QUESTIONS: Question[] = [
     choices: [
       '届出のみで公表は任意のため、減算の対象外',
       '公表を行うまで加算が算定できなくなる',
-      '基本報酬が10%減算される',
+      '所定単位数の85/100で算定（15%減算）される',
       '届出の効力が失効し再届出が必要となる',
     ],
     answer: 2,
     explanation:
-      '支援プログラムは届出と公表の両方が義務付けられており、どちらか一方が欠けている場合も基本報酬が10%減算されます。届出のみで公表なしの状態でも、公表義務違反として減算対象となります。',
+      '支援プログラムは届出と公表の両方が義務付けられており、どちらか一方が欠けている場合も所定単位数の85/100で算定（15%減算）されます。届出のみで公表なしの状態でも減算対象です。なお、令和6年度中は経過措置が設けられ、令和7年4月1日から本格適用されます。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
 
   // =====================================================================
@@ -1002,8 +1002,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '放課後等デイサービスと学校の連携は、学校での様子・支援方針を情報共有し、放課後の支援に一貫性を持たせることが目的です。学校と事業所が分断されず、子どもを総合的にサポートする体制が求められます。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '4択',
@@ -1020,8 +1020,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '放課後等デイサービスの個別支援計画は、学校の個別の教育支援計画（IEP）や個別の指導計画等を参照・連携しながら、放デイとしての役割・目標を明確にしたうえで作成します。同一にする必要はありませんが、矛盾なく整合性を持たせることが求められます。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '4択',
@@ -1038,8 +1038,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '放課後等デイサービスは本来放課後・学校休業日等に提供するサービスですが、不登校等によって学校に登校できない状況にある児童について、市区町村が必要と認めた場合には学校の授業時間中に提供することも可能とされています。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -1060,8 +1060,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '居宅訪問型児童発達支援は、重度の障害等により外出が著しく困難であり、通所による支援（児童発達支援等）を受けることが困難な障害児に対して、訪問支援員が居宅を訪問して発達支援を行うサービスです。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '4択',
@@ -1078,8 +1078,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援の対象認定は、外出困難が障害・疾病等の状態に基づくものかを判断します。保護者の就労状況（送迎できるかどうか）は対象要件ではなく、保護者の都合による送迎困難は対象外です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '4択',
@@ -1096,8 +1096,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援は、在宅（居宅）で生活する障害児への訪問支援であるため、入院中は利用対象外です。退院して居宅生活に戻った後に改めて支給決定を受けて利用することになります。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -1118,8 +1118,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '居宅訪問型児童発達支援の訪問支援員は、児童指導員任用資格・保育士・作業療法士等の資格を有するとともに、所定の研修を修了した者であることが求められます。居宅という1対1の特性から、より高い専門性が必要とされます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1136,8 +1136,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '居宅訪問型児童発達支援は、1回の訪問支援時間が1時間以上2時間未満を標準として算定します。これが基本報酬の単位数算定の基準となっています。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1154,8 +1154,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援では、1名での訪問が基本ですが、訪問前後の事業所への報告、緊急時の連絡体制の整備、児童・保護者の安全確保に関する手順の策定が求められます。2名訪問の義務規定はありません。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -1176,8 +1176,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援においても、個別支援計画の作成は児童発達支援管理責任者（児発管）が行います。訪問支援員は計画に基づいて実際の支援を実施します。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1194,8 +1194,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援の記録には、訪問日時・支援員・支援内容・児童の反応・次回への引継ぎ事項等を記載します。訪問先周辺の近隣住民の情報等は記録事項ではなく、個人情報保護の観点からも不要です。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1212,8 +1212,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '居宅訪問型児童発達支援では、児発管が個別支援計画を作成するにあたって、児童の生活環境・実態を把握するため、実際に居宅を訪問してアセスメントを行うことが求められています。電話や事業所内面談のみでは不十分です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -1230,8 +1230,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '基本報酬は、市区町村が発行する通所受給者証に記載された支給量（1か月あたりの利用可能日数）の範囲内でのみ算定できます。支給量を超えた日数分は原則として保険給付の対象外となります。',
-    source: '障害者総合支援法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）改定事項の概要',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7b729f2-effb-48e1-988a-532a70741a0d/1029bc00/20240430_policies_shougaijishien_renkei-suisin_02.pdf',
   },
   {
     type: '○×',
@@ -1242,8 +1242,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '障害児通所支援の利用者負担は原則1割負担ですが、世帯の所得に応じて月ごとの上限額が設定されており（低所得世帯は0円、一般世帯1・2等）、一定以上の負担とならないよう保護されています。',
-    source: '障害者総合支援法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）改定事項の概要',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7b729f2-effb-48e1-988a-532a70741a0d/1029bc00/20240430_policies_shougaijishien_renkei-suisin_02.pdf',
   },
   {
     type: '○×',
@@ -1255,7 +1255,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '専門的支援加算は、対象専門職が週1回以上、実際に利用児童に対して直接支援を行うことが必須要件です。単に雇用・配置しているだけでは算定できません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1267,7 +1267,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       'ペアレントトレーニングは保護者の養育スキル向上を目的としたプログラムであり、家族支援加算の算定対象となる支援として明示されています。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1279,7 +1279,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '個別サポート加算（Ⅱ）は、虐待を受けた経験がある児童に加え、ネグレクト（養育放棄）等の不適切な養育環境が認められた児童に対しても算定することができます。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1290,8 +1290,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '欠席時対応加算は、急病等のやむを得ない理由による当日の欠席に対して対応を行った場合に算定するものです。事前に届け出た計画的な欠席（旅行等）の場合は算定できません。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
   {
     type: '○×',
@@ -1302,8 +1302,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '医療連携体制加算は医療的ケアが必要な児童への対応を評価するものであり、必ずしも重症心身障害児のみが対象ではありません。医療的ケアが必要な児童（例：気管切開、経管栄養等）を受け入れ、看護師等が医療的ケアを提供した場合に算定できます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '○×',
@@ -1315,7 +1315,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '2024年度改定で示された5領域は「健康・生活」「運動・感覚」「認知・行動」「言語・コミュニケーション」「人間関係・社会性」です。「就労・自立生活」は5領域に含まれません。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1326,8 +1326,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '児発管は、児童発達支援・放課後等デイサービス・居宅訪問型児童発達支援・保育所等訪問支援のすべての障害児通所支援事業所において、1名以上の常勤配置が義務付けられています。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
   {
     type: '○×',
@@ -1338,8 +1338,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '実地指導の実施は都道府県・政令市・中核市等が行いますが、毎年1回という義務規定はありません。実際には指定後一定期間を経て実施されることが多く、法令違反の情報があれば優先的に実施される場合があります。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '○×',
@@ -1351,7 +1351,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '強度行動障害支援者養成研修加算は、研修修了者が強度行動障害を有する特定の利用児童に直接支援を行った日に算定するものです。事業所全体への一律算定ではなく、対象児童への直接支援実績に基づいて算定します。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1362,8 +1362,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '関係機関連携加算は、保育所・学校・医療機関等、外部の関係機関との連携を評価するものです。同一法人内の別事業所との連携は「関係機関連携」とはみなされず、算定対象外となります。',
-    source: '障害福祉サービス等報酬改定',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000117218.html',
+    source: '令和6年度障害福祉サービス等報酬改定における主な改定内容',
+    sourceUrl: 'https://www.mhlw.go.jp/content/001216034.pdf',
   },
 
   // 児童発達支援 ○×
@@ -1376,8 +1376,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '児童発達支援は障害者手帳の所持を必須としておらず、医師の診断書等により障害または発達の遅れが確認された場合には、市区町村の支給決定を経て利用することができます。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '○×',
@@ -1389,7 +1389,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '地域支援機能（地域の障害児通所支援事業所へのコンサルテーション等）は、児童発達支援センターに課せられた役割です。一般の児童発達支援事業所にはこの義務はありません。センターと事業所では期待される機能が異なります。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1400,8 +1400,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '保育所等訪問支援では、訪問支援員が保育所・学校等を訪問し、当該施設の職員への支援方法の助言（間接支援）と、訪問先において直接子どもに支援を行うこと（直接支援）の両方を実施します。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
 
   // 放課後等デイサービス ○×
@@ -1414,20 +1414,20 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '放課後等デイサービスは就学後の障害のある児童が対象であり、特別支援学校・特別支援学級・通常学級等の在籍にかかわらず利用できます。特別支援学校の生徒も多く利用しています。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '○×',
     serviceType: '放課後等デイサービス',
     category: '支援プログラムの届出・公表義務',
     difficulty: '中級',
-    q: '2024年度改定では、支援プログラムの届出・公表が義務化されたが、既存事業所には経過措置として届出義務が免除されている。',
+    q: '2024年度改定では、支援プログラムの届出・公表が義務化されたが、既存事業所には届出義務そのものが免除されている。',
     answer: false,
     explanation:
-      '2024年度改定では、新規・既存を問わずすべての事業所に支援プログラムの届出・公表が義務付けられています。既存事業所への特別な免除はなく、未対応の場合は基本報酬が10%減算されます。',
+      '支援プログラムの届出・公表義務は新規・既存を問わず全事業所に課されています。ただし未公表減算（所定単位数の85/100＝15%減算）の適用は令和7年4月1日からとされ、令和6年度中は経過措置が設けられました。届出義務自体の免除ではなく、減算適用時期の猶予です。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1439,7 +1439,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '関係機関連携加算（Ⅱ）は、個別支援計画の作成・見直しに際して関係機関の職員を交えた担当者会議を開催した場合に算定でき、学校との連携会議がこれに該当する場合があります。',
     source: '報酬改定詳細',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001217830.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12201000/001217865.pdf',
   },
 
   // 居宅訪問 ○×
@@ -1452,8 +1452,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '居宅訪問型児童発達支援は就学前だけでなく、18歳未満（必要に応じて20歳まで）の障害児が対象です。重度の障害等により通所が著しく困難であれば、学齢期以降も利用できます。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '○×',
@@ -1464,8 +1464,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '訪問支援員と児発管の兼任は制度上禁止されていないため、児発管が訪問支援員を兼任することは可能です。ただし、兼任する場合でも個別支援計画の作成等の管理業務に支障がないよう留意が必要です。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
   {
     type: '○×',
@@ -1476,8 +1476,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '個別支援計画の作成にあたっては、計画内容を保護者（および本人）に説明し、書面による同意を得ることが義務付けられています。これは通所型と同様に居宅訪問型でも適用されます。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '○×',
@@ -1488,8 +1488,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '居宅訪問型児童発達支援は通所型サービス（児童発達支援・放課後等デイサービス等）と同一法人・同一拠点で指定を受けて運営することが可能です。通所支援の事業所が居宅訪問型の指定も受けるケースがあります。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '○×',
@@ -1500,8 +1500,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: false,
     explanation:
       '同一拠点で児童発達支援と放課後等デイサービス等、複数の障害児通所支援の指定を受けることは可能です。ただし、それぞれの人員基準・設備基準を満たす必要があります。',
-    source: '障害児支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 Q&A（障害児支援）一覧',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/32675809-3f98-486b-9c03-efc695ede0bb/db1c84db/20240611_policies_shougaijishien_shisaku_05.pdf',
   },
 
   // =====================================================================
@@ -1524,8 +1524,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '障害児通所支援の給付費請求は、サービス提供月の翌月10日までに国民健康保険団体連合会（国保連）へ請求書類を提出する必要があります。',
-    source: '障害者総合支援法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）改定事項の概要',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7b729f2-effb-48e1-988a-532a70741a0d/1029bc00/20240430_policies_shougaijishien_renkei-suisin_02.pdf',
   },
   {
     type: '4択',
@@ -1542,8 +1542,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '利用定員を超えて児童を受け入れた場合は、定員超過利用減算が適用され、基本報酬が一定割合（通常70%）に減算されます。定員超過が常態化している場合は指導の対象ともなります。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
 
   // 児童発達支援 - 追加
@@ -1562,8 +1562,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '食事提供加算は、低所得世帯（負担上限月額0円または4,600円の世帯）の利用児童に対して食事を提供した場合に算定できます。支援の質向上と低所得世帯への配慮を目的としています。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1580,8 +1580,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '通所受給者証の支給量を超えた日の支援は給付費の算定対象外です。また、法定代理受領の範囲外となるため原則として保護者への実費請求もできません。支給量の変更が必要な場合は事前に市区町村へ申請します。',
-    source: '障害者総合支援法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定（障害児支援）改定事項の概要',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/a7b729f2-effb-48e1-988a-532a70741a0d/1029bc00/20240430_policies_shougaijishien_renkei-suisin_02.pdf',
   },
   {
     type: '4択',
@@ -1598,8 +1598,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '児童発達支援センターは、社会福祉法人・医療法人・NPO法人・株式会社等の多様な主体が都道府県（または政令市・中核市）の指定を受けて設置・運営できます。公的機関のみが設置するわけではありません。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
 
   // 放課後等デイサービス - 追加
@@ -1618,8 +1618,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '放課後等デイサービスは、就学中の障害児に対して、放課後や夏休み等に生活能力向上のための訓練、創作活動、地域交流の機会提供、放課後等の居場所づくりを目的として実施します。学習支援はあくまで支援の一部であり、主目的ではありません。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
   },
   {
     type: '4択',
@@ -1637,7 +1637,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '関係機関連携加算（Ⅰ）は、関係機関の職員が事業所を訪問して情報共有・連携を行った場合等も対象となります。特別支援学校の教員が事業所を訪問して支援内容の連携を図った場合はこれに該当する場合があります。',
     source: '報酬改定詳細',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001217830.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12201000/001217865.pdf',
   },
   {
     type: '4択',
@@ -1654,8 +1654,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 0,
     explanation:
       '重症心身障害児を主として支援する放課後等デイサービスは、看護師（または准看護師）を1名以上常勤で配置することが人員基準として定められています。医療的ケアへの対応を確保するためです。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
 
   // 居宅訪問 - 追加
@@ -1674,8 +1674,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 1,
     explanation:
       '居宅訪問型児童発達支援は、原則として月8回を上限として支給量が設定されます。ただし、特に必要と認められる場合は市区町村の判断でこれを超えることもあります。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
   {
     type: '4択',
@@ -1692,8 +1692,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '居宅訪問型児童発達支援は訪問型サービスであるため、専用の訓練室等は不要です。事業を運営するための事務スペースと連絡先（電話等）を確保していれば設備基準を満たすとされています。',
-    source: '障害児通所支援',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
   },
 
   // 放課後等デイサービス - インクルージョン推進（追加）
@@ -1713,7 +1713,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       'インクルージョン（包容・包摂）とは、障害のある子どもが地域の保育所・学校等の一般施設において、障害のない子どもとともに生活・学習できるよう支援する考え方です。2024年度改定ではこの推進が重点課題の一つとされました。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '4択',
@@ -1730,8 +1730,8 @@ export const ALL_QUESTIONS: Question[] = [
     answer: 2,
     explanation:
       '障害児通所支援事業所の指定は、都道府県知事（または政令市・中核市の場合はその長）に申請し、基準を満たした場合に指定を受けます。指定後も定期的な指導・監査の対象となります。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000202214_00013.html',
+    source: '令和6年度報酬改定 留意事項通知（障害児��援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/25400d3f/20240412_policies_shougaijishien_shisaku_hoshukaitei_45.pdf',
   },
 
   // ○× 追加 2問
@@ -1745,7 +1745,7 @@ export const ALL_QUESTIONS: Question[] = [
     explanation:
       '支援プログラムの公表義務は、保護者・利用希望者が各事業所の支援内容を比較・選択できるよう透明性を確保することを目的としています。公表していない場合は基本報酬の10%減算対象となります。',
     source: '令和6年度障害福祉サービス等報酬改定の概要',
-    sourceUrl: 'https://www.mhlw.go.jp/content/12401000/001205270.pdf',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
   {
     type: '○×',
@@ -1756,7 +1756,335 @@ export const ALL_QUESTIONS: Question[] = [
     answer: true,
     explanation:
       '保育所等訪問支援の訪問先は、保育所・幼稚園・学校等の「施設」に限られます。保護者の居宅への訪問は対象外であり、それは居宅訪問型児童発達支援や家族支援加算等の対象となります。',
-    source: '児童福祉法',
-    sourceUrl: 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/shougaishahukushi/service/index_00003.html',
+    source: '令和6年度報酬改定 Q&A VOL.1（障害児支援）',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/253aba4f-3ce0-4aa1-a777-3d42440f1ca2/36bd7a00/20240412_policies_shougaijishien_shisaku_hoshukaitei_46.pdf',
+  },
+
+  // =====================================================================
+  // 加算・減算・請求実務 (20問: 4択15 + ○×5)
+  // =====================================================================
+
+  // --- 処遇改善加算 ---
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '初級',
+    q: '2024年度改定で、福祉・介護職員に関する3つの処遇改善系加算はどのように変わったか。',
+    choices: [
+      'すべて廃止された',
+      '4段階の「福祉・介護職員等処遇改善加算」に一本化された',
+      '2つに統合された（基本分と特定分）',
+      '名称のみ変更され内容は据え置き',
+    ],
+    answer: 1,
+    explanation:
+      '令和6年6月から、「福祉・介護職員処遇改善加算」「特定処遇改善加算」「ベースアップ等支援加算」の3加算が、4段階の「福祉・介護職員等処遇改善加算（Ⅰ〜Ⅳ）」に一本化されました。加算率も引き上げられています。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '中級',
+    q: '福祉・介護職員等処遇改善加算の算定方法として正しいものはどれか。',
+    choices: [
+      '基本報酬に加算率を乗じて算定する',
+      '加算・減算後の総報酬単位数に加算率を乗じて算定する',
+      '職員1人あたりの定額で算定する',
+      '利用児童1人あたりの定額で算定する',
+    ],
+    answer: 1,
+    explanation:
+      '処遇改善加算は、福祉・介護職員等処遇改善加算を除く加減算後の総報酬単位数に、サービスごとに定められた加算率を乗じて算定します。基本報酬のみではなく、各種加算・減算後の総額がベースとなります。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+
+  // --- 減算 ---
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '初級',
+    q: 'サービス提供職員欠如減算が適用される条件として正しいものはどれか。',
+    choices: [
+      '職員が1名でも欠勤した日',
+      '人員配置基準を下回る状態が発生した場合',
+      '利用児童の出席率が50%を下回った場合',
+      '児発管が不在の日',
+    ],
+    answer: 1,
+    explanation:
+      'サービス提供職員欠如減算は、指定基準で定められた人員配置基準（児童指導員・保育士等の配置数）を満たさない状態が生じた場合に適用されます。1名の欠勤でも基準を下回れば対象となり得ます。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '放課後等デイサービス',
+    category: '加算・減算',
+    difficulty: '中級',
+    q: 'サービス提供職員欠如減算の減算率について、欠如状態が3か月を超えた場合の取扱いとして正しいものはどれか。',
+    choices: [
+      '引き続き所定単位数の70%（30%減算）',
+      '所定単位数の50%（50%減算）に強化される',
+      '指定の効力が自動停止される',
+      '減算ではなく改善命令が出される',
+    ],
+    answer: 1,
+    explanation:
+      'サービス提供職員欠如減算は、欠如の翌月（1割超の場合は翌々月）から適用され、2か月目まで30%減算、3か月目以降は50%減算に強化されます。長期の人員不足は厳しいペナルティの対象です。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '放課後等デイサービス',
+    category: '加算・減算',
+    difficulty: '上級',
+    q: '定員超過利用減算が適用される判定基準として正しいものはどれか。',
+    choices: [
+      '1日でも定員を1名でも超えた場合は即日適用',
+      '1日の利用実績または直近3か月の平均利用実績が定員の一定割合を超えた場合',
+      '月間の延べ利用人数が定員×営業日数を超えた場合',
+      '年度累計で定員を超えた日が30日以上の場合',
+    ],
+    answer: 1,
+    explanation:
+      '定員超過利用減算は、①1日あたりの利用実績が利用定員の150%（定員50人以下の場合）を超えた場合、または②直近3か月間の平均利用実績が定員の125%を超えた場合に適用されます。両方の視点で判断されます。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '中級',
+    q: '2024年度改定で「身体拘束廃止未実施減算」の減算方法はどのように変更されたか。',
+    choices: [
+      '1日5単位の定額減算から所定単位数の1%減算に変更',
+      '減算率が5%から10%に引き上げ',
+      '新設された減算で以前は存在しなかった',
+      '減算ではなく指定取消しの要件に変更',
+    ],
+    answer: 0,
+    explanation:
+      '2024年度改定により、身体拘束廃止未実施減算は従来の「1日5単位」の定額減算から「所定単位数の1%」の定率減算に変更されました。身体拘束等の適正化の徹底が図られています。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+
+  // --- サービスコード・請求実務 ---
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '初級',
+    q: '障害児通所支援の給付費請求先として正しいものはどれか。',
+    choices: [
+      '市区町村の福祉課',
+      '都道府県の障害福祉課',
+      '国民健康保険団体連合会（国保連）',
+      '厚生労働省',
+    ],
+    answer: 2,
+    explanation:
+      '障害児通所支援の給付費は、事業所が国民健康保険団体連合会（国保連）に対して請求します。国保連が審査を行い、市区町村から事業所へ給付費が支払われる仕組みです。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '中級',
+    q: 'サービスコード表において「合成コード」とはどのようなものか。',
+    choices: [
+      '複数の事業所で共通して使うコード',
+      '基本報酬と主要な加算・減算を組み合わせてあらかじめ合算した単位数を持つコード',
+      '前年度の実績に基づいて自動生成されるコード',
+      '利用者の障害種別に応じて変わるコード',
+    ],
+    answer: 1,
+    explanation:
+      '合成コードとは、基本報酬に主要な加算や減算の単位数をあらかじめ合算して1つのサービスコードとしたものです。サービス内容略称に「・」の区切りで合成項目が示されます。請求事務の効率化のため設けられています。',
+    source: '令和6年4月施行 介護給付費等単位数サービスコード表',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/0424008.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '中級',
+    q: '障害児通所支援の給付費請求において、サービス提供月の翌月の締切日として正しいものはどれか。',
+    choices: [
+      '翌月5日',
+      '翌月10日',
+      '翌月15日',
+      '翌月末日',
+    ],
+    answer: 1,
+    explanation:
+      '障害児通所支援の給付費は、サービス提供月の翌月10日までに国保連へ請求書類を提出する必要があります。期限を過ぎると当月分の審査・支払いに間に合わなくなります。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '上級',
+    q: '報酬請求でサービスコードを選択する際、基本報酬の合成コードに含まれない加算の取扱いとして正しいものはどれか。',
+    choices: [
+      '合成コードに含まれない加算は算定できない',
+      '加算ごとに別のサービスコード行を追加して請求する',
+      '基本報酬の単位数に手動で加算単位数を上乗せする',
+      '翌月にまとめて加算分を請求する',
+    ],
+    answer: 1,
+    explanation:
+      '合成コードに含まれない加算（例：処遇改善加算、送迎加算等）は、それぞれ独立したサービスコードとして別行で請求明細に記載します。1回の利用につき複数のサービスコード行が発生することが一般的です。',
+    source: '令和6年4月施行 介護給付費等単位数サービスコード表',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/0424008.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '上級',
+    q: '国保連への請求がエラー（返戻）となった場合の対応として正しいものはどれか。',
+    choices: [
+      '翌々月以降に修正して再請求する',
+      '市区町村に直接請求する',
+      'エラー内容を確認・修正し、翌月以降に再請求する',
+      '返戻分は請求できないため放棄する',
+    ],
+    answer: 2,
+    explanation:
+      '国保連の審査でエラー（返戻）となった請求は、エラーコードと内容を確認して原因を修正し、翌月以降に再請求します。受給者証の情報不一致やサービスコードの誤りが主な返戻原因です。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+
+  // --- 新設加算 ---
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '中級',
+    q: '2024年度改定で新設された「子育てサポート加算」の対象となる支援として正しいものはどれか。',
+    choices: [
+      '保護者の就労支援',
+      '預かりニーズへの対応として延長支援を提供すること',
+      '兄弟児への支援',
+      '保護者同士の交流会の開催',
+    ],
+    answer: 1,
+    explanation:
+      '子育てサポート加算は、保護者の就労等により預かりニーズがある場合に、通常の支援時間を超えた延長支援を提供した場合に算定できます。いわゆる「預かり」機能を報酬上評価する新設加算です。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+  {
+    type: '4択',
+    serviceType: '児童発達支援',
+    category: '加算・減算',
+    difficulty: '上級',
+    q: '2024年度改定で新設された「集中的支援加算」の趣旨として正しいものはどれか。',
+    choices: [
+      '利用開始直後の集中的なアセスメントを評価する',
+      '強度行動障害を有する児童への集中的支援について、外部の専門人材と連携して実施することを評価する',
+      '定員を超えて短期間に集中的に利用する場合を評価する',
+      '1日8時間以上の長時間支援を評価する',
+    ],
+    answer: 1,
+    explanation:
+      '集中的支援加算は、強度行動障害を有する児童等に対して、外部の専門人材（広域的支援人材等）と連携しながら集中的な支援を実施した場合に算定できます。事業所単独では困難な支援を外部連携で実現することを評価します。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+
+  // --- 単位数計算 ---
+  {
+    type: '4択',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '初級',
+    q: '障害福祉サービスの報酬における「1単位」の金額として正しいものはどれか。',
+    choices: [
+      '一律10円',
+      '地域区分に応じて10円〜11.40円程度',
+      '一律100円',
+      'サービス種別ごとに異なり1円〜100円',
+    ],
+    answer: 1,
+    explanation:
+      '1単位の単価は地域区分（人件費の地域差を反映した区分）に応じて異なり、おおむね10円〜11.40円程度です。都市部ほど高く設定されています。サービス種別と地域区分の組み合わせで決まります。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+
+  // --- ○× 加算・減算・請求実務 ---
+  {
+    type: '○×',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '初級',
+    q: '処遇改善加算で得た収入は、事業所の運営費に自由に充てることができる。',
+    answer: false,
+    explanation:
+      '処遇改善加算の収入は、福祉・介護職員等の賃金改善に確実に充てる必要があり、事業所の一般運営費には使用できません。加算の趣旨に反する使途は返還対象となります。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
+  },
+  {
+    type: '○×',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '中級',
+    q: '児発管が退職して後任が決まらない場合、児発管欠如減算として基本報酬の30%が減算される。',
+    answer: true,
+    explanation:
+      '児発管が不在の状態が生じた場合、翌月から児発管欠如減算（基本報酬の30%減算）が適用されます。4か月目以降は50%減算に強化されるため、早急な後任確保が必要です。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '○×',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '中級',
+    q: '同一の利用児童が同日に児童発達支援と放課後等デイサービスの両方を利用した場合、両方のサービスの報酬を請求できる。',
+    answer: false,
+    explanation:
+      '障害児通所支援は原則として同一日に複数の通所サービスを併用して報酬請求することはできません。同日利用の場合はいずれか一方のみの算定となります（一部例外あり）。',
+    source: '令和6年度報酬改定（障害児支援）主な改定内容',
+    sourceUrl: 'https://www.cfa.go.jp/assets/contents/node/basic_page/field_ref_resources/36cf8614-0cc4-4e0b-aa54-308fbae2714a/7aa07e04/20240327_councils_shingikai_shougaiji_shien_36cf8614_02.pdf',
+  },
+  {
+    type: '○×',
+    serviceType: '共通',
+    category: '請求事務・サービスコード',
+    difficulty: '初級',
+    q: 'サービスコード表は報酬改定のたびに更新され、厚生労働省のウェブサイトで公開されている。',
+    answer: true,
+    explanation:
+      'サービスコード表（介護給付費等単位数サービスコード表）は報酬改定のたびに改訂版が公開されます。令和6年4月施行分のサービスコード表は厚生労働省ウェブサイトに掲載されています。',
+    source: '令和6年4月施行 介護給付費等単位数サービスコード表',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/0424008.pdf',
+  },
+  {
+    type: '○×',
+    serviceType: '共通',
+    category: '加算・減算',
+    difficulty: '上級',
+    q: '処遇改善加算と特定処遇改善加算は、2024年6月以降も旧加算のまま経過的に算定し続けることが可能である。',
+    answer: true,
+    explanation:
+      '2024年6月から新加算に一本化されましたが、経過措置として、令和7年3月末までは旧3加算（処遇改善加算・特定処遇改善加算・ベースアップ等支援加算）の組み合わせでの算定も認められていました。',
+    source: '令和6年度障害福祉サービス等報酬改定の概要',
+    sourceUrl: 'https://www.mhlw.go.jp/content/12200000/001205322.pdf',
   },
 ];

@@ -31,7 +31,34 @@ export interface QuestionOX {
 
 export type Question = Question4 | QuestionOX;
 
-export type Screen = 'start' | 'quiz' | 'result';
+export type Screen = 'start' | 'quiz' | 'result' | 'studyList' | 'studyDetail';
+
+export interface StudyTableRow {
+  cells: string[];
+}
+
+export interface StudyTable {
+  headers: string[];
+  rows: StudyTableRow[];
+}
+
+export interface StudySection {
+  heading: string;
+  body: string;
+  table?: StudyTable;
+  note?: string;
+}
+
+export interface StudyTopic {
+  id: string;
+  category: string;
+  title: string;
+  serviceType: ServiceType;
+  icon: string;
+  sections: StudySection[];
+  source: string;
+  sourceUrl: string;
+}
 
 export interface AnswerResult {
   question: Question;

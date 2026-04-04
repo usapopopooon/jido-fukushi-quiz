@@ -1,11 +1,15 @@
-import { useQuiz } from './hooks/useQuiz';
-import StartScreen from './components/StartScreen';
-import QuizScreen from './components/QuizScreen';
-import ResultScreen from './components/ResultScreen';
+import { useState } from 'react';
+import { useQuiz } from '@/hooks/useQuiz';
+import StartScreen from '@/components/StartScreen';
+import QuizScreen from '@/components/QuizScreen';
+import ResultScreen from '@/components/ResultScreen';
+import StudyListScreen from '@/components/StudyListScreen';
+import StudyDetailScreen from '@/components/StudyDetailScreen';
+import type { Screen, StudyTopic } from '@/types/quiz';
 
 export default function App() {
   const {
-    screen,
+    screen: quizScreen,
     currentQuestion,
     currentIndex,
     totalCount,
@@ -19,7 +23,13 @@ export default function App() {
     nextQuestion,
   } = useQuiz();
 
-  if (screen === 'quiz' && currentQuestion) {
+  const [appScreen, setAppScreen] = useState<Screen>('start');
+  const [selectedTopic, setSelectedTopic] = useState<StudyTopic | null>(null);
+
+  // Quiz flow uses its own screen state
+  const activeScreen = quizScreen !== 'start' ? quizScreen : appScreen;
+
+  if (activeScreen === 'quiz' && currentQuestion) {
     return (
       <QuizScreen
         question={currentQuestion}
@@ -34,7 +44,7 @@ export default function App() {
     );
   }
 
-  if (screen === 'result') {
+  if (activeScreen === 'result') {
     return (
       <ResultScreen
         score={score}
@@ -45,5 +55,34 @@ export default function App() {
     );
   }
 
-  return <StartScreen onStart={startQuiz} />;
+  if (activeScreen === 'studyDetail' && selectedTopic) {
+    return (
+      <StudyDetailScreen
+        topic={selectedTopic}
+        onBack={() => {
+          setSelectedTopic(null);
+          setAppScreen('studyList');
+        }}
+      />
+    );
+  }
+
+  if (activeScreen === 'studyList') {
+    return (
+      <StudyListScreen
+        onSelect={(topic) => {
+          setSelectedTopic(topic);
+          setAppScreen('studyDetail');
+        }}
+        onBack={() => setAppScreen('start')}
+      />
+    );
+  }
+
+  return (
+    <StartScreen
+      onStart={startQuiz}
+      onStudy={() => setAppScreen('studyList')}
+    />
+  );
 }

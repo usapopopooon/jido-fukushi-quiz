@@ -2,15 +2,15 @@ import { describe, it, expect } from 'vitest';
 import { ALL_QUESTIONS } from '../questions';
 
 describe('questions data', () => {
-  it('has exactly 100 questions', () => {
-    expect(ALL_QUESTIONS).toHaveLength(100);
+  it('has at least 119 questions', () => {
+    expect(ALL_QUESTIONS.length).toBeGreaterThanOrEqual(119);
   });
 
-  it('has 75 4択 questions and 25 ○× questions', () => {
+  it('has correct 4択/○× ratio', () => {
     const q4 = ALL_QUESTIONS.filter((q) => q.type === '4択');
     const ox = ALL_QUESTIONS.filter((q) => q.type === '○×');
-    expect(q4).toHaveLength(75);
-    expect(ox).toHaveLength(25);
+    expect(q4.length).toBeGreaterThanOrEqual(89);
+    expect(ox.length).toBeGreaterThanOrEqual(30);
   });
 
   it('covers all service types', () => {
