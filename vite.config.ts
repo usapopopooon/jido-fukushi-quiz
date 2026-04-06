@@ -6,6 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/jido-fukushi-quiz/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -30,8 +31,8 @@ export default defineConfig({
         theme_color: '#1D9E75',
         background_color: '#ffffff',
         display: 'standalone',
-        scope: '/',
-        start_url: '/',
+        scope: '/jido-fukushi-quiz/',
+        start_url: '/jido-fukushi-quiz/',
         orientation: 'portrait',
         icons: [
           {
