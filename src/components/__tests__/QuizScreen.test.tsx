@@ -37,6 +37,7 @@ const baseProps = {
   onAnswer4: vi.fn(),
   onAnswerOX: vi.fn(),
   onNext: vi.fn(),
+  onQuit: vi.fn(),
 };
 
 describe('QuizScreen - 4択', () => {

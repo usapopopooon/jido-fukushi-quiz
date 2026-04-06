@@ -21,6 +21,7 @@ export default function App() {
     answer4,
     answerOX,
     nextQuestion,
+    quitQuiz,
   } = useQuiz();
 
   const [appScreen, setAppScreen] = useState<Screen>('start');
@@ -40,6 +41,7 @@ export default function App() {
         onAnswer4={answer4}
         onAnswerOX={answerOX}
         onNext={nextQuestion}
+        onQuit={quitQuiz}
       />
     );
   }

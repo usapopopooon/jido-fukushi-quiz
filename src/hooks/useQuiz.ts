@@ -15,7 +15,8 @@ interface QuizState {
 type QuizAction =
   | { type: 'START'; selectedServices: ServiceType[]; selectedDifficulties: Difficulty[] }
   | { type: 'ANSWER'; correct: boolean; question: Question }
-  | { type: 'NEXT' };
+  | { type: 'NEXT' }
+  | { type: 'QUIT' };
 
 function shuffle<T>(arr: T[]): T[] {
   return [...arr].sort(() => Math.random() - 0.5);
@@ -66,6 +67,8 @@ function reducer(state: QuizState, action: QuizAction): QuizState {
       }
       return { ...state, currentIndex: nextIndex, answered: false, isCorrect: null };
     }
+    case 'QUIT':
+      return initialState;
     default:
       return state;
   }
@@ -112,6 +115,8 @@ export function useQuiz() {
 
   const nextQuestion = useCallback(() => dispatch({ type: 'NEXT' }), []);
 
+  const quitQuiz = useCallback(() => dispatch({ type: 'QUIT' }), []);
+
   return {
     screen: state.screen,
     currentQuestion: state.questions[state.currentIndex] ?? null,
@@ -125,5 +130,6 @@ export function useQuiz() {
     answer4,
     answerOX,
     nextQuestion,
+    quitQuiz,
   };
 }

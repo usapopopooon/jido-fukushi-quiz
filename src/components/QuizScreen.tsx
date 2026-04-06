@@ -14,6 +14,7 @@ interface Props {
   onAnswer4: (idx: number) => void;
   onAnswerOX: (val: boolean) => void;
   onNext: () => void;
+  onQuit: () => void;
 }
 
 const LABELS = ['A', 'B', 'C', 'D'] as const;
@@ -27,6 +28,7 @@ export default function QuizScreen({
   onAnswer4,
   onAnswerOX,
   onNext,
+  onQuit,
 }: Props) {
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [selectedOX, setSelectedOX] = useState<boolean | null>(null);
@@ -49,6 +51,14 @@ export default function QuizScreen({
     setSelectedIdx(null);
     setSelectedOX(null);
     onNext();
+  };
+
+  const handleQuit = () => {
+    if (window.confirm('クイズを中断してトップに戻ります。現在の進行状況は破棄されますがよろしいですか？')) {
+      setSelectedIdx(null);
+      setSelectedOX(null);
+      onQuit();
+    }
   };
 
   const getChoiceExtraClass = (idx: number) => {
@@ -79,11 +89,11 @@ export default function QuizScreen({
       {/* Progress */}
       <div className="bg-card shadow-sm">
         <Progress value={progress} className="[&_[data-slot=progress-track]]:h-1.5 [&_[data-slot=progress-track]]:rounded-none [&_[data-slot=progress-indicator]]:bg-emerald-500" />
-        <div className="px-4 py-3 flex items-center justify-between">
+        <div className="px-4 py-3 flex items-center justify-between gap-2">
           <span className="text-sm text-muted-foreground font-medium">
             問題 {currentIndex + 1} / {totalCount}
           </span>
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-2 flex-wrap items-center">
             <Badge variant="secondary" className="bg-emerald-100 text-emerald-700">
               {question.type}
             </Badge>
@@ -93,6 +103,14 @@ export default function QuizScreen({
             <Badge variant="secondary" className="bg-amber-100 text-amber-700">
               {question.category}
             </Badge>
+            <Button
+              onClick={handleQuit}
+              variant="ghost"
+              size="sm"
+              className="h-7 px-2 text-xs text-muted-foreground hover:text-red-600"
+            >
+              中断
+            </Button>
           </div>
         </div>
       </div>
