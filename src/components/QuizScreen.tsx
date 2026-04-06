@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
@@ -106,10 +107,11 @@ export default function QuizScreen({
             <Button
               onClick={handleQuit}
               variant="ghost"
-              size="sm"
-              className="h-7 px-2 text-xs text-muted-foreground hover:text-red-600"
+              size="icon"
+              aria-label="クイズを中断"
+              className="h-7 w-7 text-muted-foreground hover:text-red-600"
             >
-              中断
+              <X className="h-4 w-4" />
             </Button>
           </div>
         </div>
